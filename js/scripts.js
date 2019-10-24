@@ -6,11 +6,11 @@ $(document).ready(function() {
       var favHair = parseInt($('input:radio[name=fav-hair]:checked').val());
       var favActivity = parseInt($('input:radio[name=fav-activity]:checked').val());
       var hairFoodTotal = favFood + favHair;
-      if (hairFoodTotal < 3 && favActivity === 1) {
+      if (hairFoodTotal <= 3 && favActivity === 1) {
         $('#gosling').show();
-      } else if (hairFoodTotal >= 3 && favActivity >= 2) {
+      } else if (hairFoodTotal > 3 && favActivity >= 2) {
         $('#spears').show();
-      } else if (hairFoodTotal >= 3 && favActivity === 1) {
+      } else if (hairFoodTotal > 3 && favActivity === 1) {
         $('#gomez').show();
       } else {
         $('#lonely').show();
