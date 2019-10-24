@@ -54,3 +54,12 @@ img {
   padding: 5px;
   border: 9px solid purple;
 }
+
+body {
+  background-color: grey;
+  font-family: arial;
+
+}
+ .results {
+   font-family: impact;
+ }
